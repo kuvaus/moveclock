@@ -1,0 +1,23 @@
+name: CMake
+
+on:
+  push:
+
+permissions:
+ contents: read
+ actions: write
+
+jobs:
+ build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run install.sh
+        run: ./install.sh
+        shell: bash
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: moveclockkuvaus.org.shell.extension.zip
+          path: moveclockkuvaus.org.shell.extension.zip
