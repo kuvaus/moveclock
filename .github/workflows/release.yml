@@ -38,7 +38,7 @@ jobs:
     steps:
     
     - name: Download build artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: moveclock@kuvaus.org.shell-extension.zip    
     
@@ -77,4 +77,5 @@ jobs:
           changelog_format: 'auto-changelog'
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
+
 
