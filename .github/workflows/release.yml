@@ -1,0 +1,43 @@
+
+name: Make Release
+
+on:
+  push:
+    tags:
+      - 'v*.*'
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+  releasenotes:
+    needs: release
+    runs-on: ubuntu-latest
+    name: Generate release notes
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Generate release notes
+        uses: kuvaus/changelog-releasenotes-action@v2
+        with:
+          changelog_format: 'auto-changelog'
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
+
