@@ -4,17 +4,17 @@
 set -e
 
 # cd to the repo root
-cd "$( cd "$( dirname "$0" )" && pwd )/"
+cd "$( cd "$( dirname "$0" )" && pwd )/."
 
 echo "Zipping the  extension..."
-gnome-extensions pack src --force
+gnome-extensions pack . --force
 echo "Zipped!"
 
 while getopts i flag; do
     case $flag in
 
         i)  gnome-extensions install --force \
-            moveclockkuvaus.org.shell.extension.zip && \
+            moveclock@kuvaus.org.shell-extension.zip && \
             echo "Extension is installed. Now restart the GNOME Shell." || \
             { echo "ERROR: Could not install the extension!"; exit 1; };;
 

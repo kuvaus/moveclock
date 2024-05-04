@@ -2,7 +2,7 @@
 *.mo
 resources/*gresource*
 schemas/gschemas.compiled
-moveclockkuvaus.org.shell.extension.zip
+moveclock@kuvaus.org.shell-extension.zip
 
 # MacOS
 .DS_Store
