@@ -1,2 +1,4 @@
 # moveclock
-A GNOME extension that positions the clock on the far right of the panel
+[![Download on the GNOME Extensions](./resources/gnome.svg)](https://extensions.gnome.org/extension/xxx/moveclock/)
+
+GNOME extension for positioning the clock on the right side of the panel
