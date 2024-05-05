@@ -3,6 +3,7 @@
   "description": "Move the clock to right side of the panel",
   "name": "moveclock",
   "gettext-domain": "moveclock",
+  "settings-schema": "org.gnome.shell.extensions.moveclock",
   "shell-version": [
     "46"
   ],

@@ -18,13 +18,6 @@ export default class moveclock_preferences extends ExtensionPreferences {
         });
         window.add(page);
 
-        // Create a group for the extension settings
-        const pref_group = new Adw.PreferencesGroup({
-            title: _('Extension Settings'),
-            description: _('Configure the extension settings'),
-        });
-        page.add(pref_group);
-
         // Create a group for links
         const group = new Adw.PreferencesGroup({
             title: _('Visit extension homepage:'),

@@ -13,7 +13,8 @@ export default class MoveClockAndStatusMenu {
         let centerBox = Main.panel._centerBox;
         let rightBox = Main.panel._rightBox;
         let dateMenu = Main.panel.statusArea['dateMenu'];
-        let statusMenu = Main.panel.statusArea['statusMenu']; // Ensure this is the correct name
+        
+        let statusMenu = Main.panel.statusArea['quickSettings'];
         let children = centerBox.get_children();
 
         // Store references to the dateMenu and statusMenu for later use
@@ -44,10 +45,10 @@ export default class MoveClockAndStatusMenu {
             centerBox.add_child(this._dateMenu.container);
         }
 
-        // Move the statusMenu back to the centerBox
+        // Move the statusMenu back to the rightBox
         if (rightBox.get_children().indexOf(this._statusMenu.container) != -1) {
             rightBox.remove_child(this._statusMenu.container);
-            centerBox.add_child(this._statusMenu.container);
+            rightBox.add_child(this._statusMenu.container);
         }
     }
 }
