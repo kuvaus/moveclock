@@ -8,7 +8,7 @@ import Gtk from 'gi://Gtk';
 import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 
-export default class ExamplePreferences extends ExtensionPreferences {
+export default class moveclock_preferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
 
         // Create a preferences page
@@ -17,13 +17,6 @@ export default class ExamplePreferences extends ExtensionPreferences {
             icon_name: 'dialog-information-symbolic',
         });
         window.add(page);
-
-        // Create a group for the extension settings
-        const pref_group = new Adw.PreferencesGroup({
-            title: _('Extension Settings'),
-            description: _('Configure the extension settings'),
-        });
-        page.add(pref_group);
 
         // Create a group for links
         const group = new Adw.PreferencesGroup({
