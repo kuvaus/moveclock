@@ -52,7 +52,6 @@ Alternatively, you can manually run the commands executed by the script:
 
 ```bash
 cd moveclock
-glib-compile-schemas schemas/
 gnome-extensions pack . --force
 gnome-extensions install --force moveclock@kuvaus.org.shell-extension.zip
 ```
