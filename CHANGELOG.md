@@ -8,5 +8,6 @@
 
 > 5 May 2024
 
+- statusMenu is now correctly referring to quickSettings (Thanks JustPerfection reviewers)
 - Initial release
 
