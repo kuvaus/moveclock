@@ -1,4 +1,4 @@
-[![Download on the GNOME Extensions](./resources/gnome.svg)](https://extensions.gnome.org/extension/xxx/moveclock/)
+[![Download on the GNOME Extensions](./resources/gnome.svg)](https://extensions.gnome.org/extension/6949/moveclock/)
 
 # <img alt="Clock icon" src="./resources/clock.svg" width="32" /> moveclock
 
@@ -16,7 +16,7 @@ Ensure you log out and log back in after installation to allow the GNOME shell t
 
 ### From extensions.gnome.org
 
-1. Visit [extensions.gnome.org](https://extensions.gnome.org/extension/xxx/moveclock/)
+1. Visit [extensions.gnome.org](https://extensions.gnome.org/extension/6949/moveclock/)
 2. Click the install button.
 
 ### From the Latest Github Release
