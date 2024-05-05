@@ -2,7 +2,6 @@
 // Licence: GPLv3
 
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
-import * as SessionMode from 'resource:///org/gnome/shell/ui/sessionMode.js';
 
 export default class MoveClockAndStatusMenu {
     constructor() {
@@ -11,7 +10,6 @@ export default class MoveClockAndStatusMenu {
     }
 
     enable() {
-        try {
         let centerBox = Main.panel._centerBox;
         let rightBox = Main.panel._rightBox;
         let dateMenu = Main.panel.statusArea['dateMenu'];
@@ -34,11 +32,9 @@ export default class MoveClockAndStatusMenu {
             centerBox.remove_child(statusMenu.container);
             rightBox.insert_child_at_index(statusMenu.container, rightBox.get_children().length - 1);
         }
-        } catch (error) {}
     }
 
     disable() {
-        try {
         let centerBox = Main.panel._centerBox;
         let rightBox = Main.panel._rightBox;
 
@@ -53,7 +49,6 @@ export default class MoveClockAndStatusMenu {
             rightBox.remove_child(this._statusMenu.container);
             centerBox.add_child(this._statusMenu.container);
         }
-        } catch (error) {}
     }
 }
 

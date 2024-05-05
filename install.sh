@@ -6,10 +6,6 @@ set -e
 # cd to the repo root
 cd "$( cd "$( dirname "$0" )" && pwd )/."
 
-echo "Compile schemas..."
-glib-compile-schemas schemas/
-echo "Done"
-
 echo "Zipping the  extension..."
 gnome-extensions pack . --force
 echo "Zipped!"

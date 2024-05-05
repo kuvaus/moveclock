@@ -8,7 +8,7 @@ import Gtk from 'gi://Gtk';
 import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 
-export default class ExamplePreferences extends ExtensionPreferences {
+export default class moveclock_preferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
 
         // Create a preferences page
