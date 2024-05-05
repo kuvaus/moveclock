@@ -1,4 +1,4 @@
-[![Download on the GNOME Extensions](./resources/gnome.svg)](https://extensions.gnome.org/extension/moveclock/)
+[![Download on the GNOME Extensions](./resources/gnome.svg)](https://extensions.gnome.org/extension/xxx/moveclock/)
 
 # <img alt="Clock icon" src="./resources/clock.svg" width="32" /> moveclock
 
@@ -16,7 +16,7 @@ Ensure you log out and log back in after installation to allow the GNOME shell t
 
 ### From extensions.gnome.org
 
-1. Visit [extensions.gnome.org](https://extensions.gnome.org/extension/moveclock/)
+1. Visit [extensions.gnome.org](https://extensions.gnome.org/extension/xxx/moveclock/)
 2. Click the install button.
 
 ### From the Latest Github Release
@@ -61,22 +61,28 @@ gnome-extensions install --force moveclock@kuvaus.org.shell-extension.zip
 
 After installation, the extension should automatically activate upon your next login. Use the following commands for managing the extension:
 
+- **List**: List all your gnome-extensions. Get the `<extension name>` from here.
+
+```bash
+gnome-extensions list
+```
+
 - **Enable**: Activates the extension and repositions the clock and status panel.
 
 ```bash
-gnome-extensions enable moveclock@kuvaus.org
+gnome-extensions enable <extension name>
 ```
 
 - **Disable**: Deactivates the extension and reverts the clock and status panel to their default positions.
 
 ```bash
-gnome-extensions disable moveclock@kuvaus.org
+gnome-extensions disable <extension name>
 ```
 
 - **Prefs**: Opens the preferences page, which includes a link to this Github page for downloading newer versions.
 
 ```bash
-gnome-extensions prefs moveclock@kuvaus.org
+gnome-extensions prefs <extension name>
 ```
 
 ## Author
