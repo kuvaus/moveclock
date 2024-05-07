@@ -1,7 +1,13 @@
 
 ## Changelog
 
-#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v4...HEAD)
+#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v5...HEAD)
+
+#### [v5](https://github.com/kuvaus/moveclock/releases/tag/v5)
+
+> 7 May 2024
+
+- Code cleanup
 
 #### [v4](https://github.com/kuvaus/moveclock/releases/tag/v4)
 

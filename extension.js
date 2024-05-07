@@ -33,7 +33,7 @@ export default class MoveClockAndStatusMenu extends Extension {
             // Move the dateMenu to the rightBox before statusMenu
             else { rightBox.insert_child_at_index(dateMenu.container, rightBox.get_children().length - 1); }
         }
-    
+
         // Move the statusMenu to just before the dateMenu in the rightBox
         let statusMenuIndex = children.indexOf(statusMenu.container);
         if (statusMenuIndex != -1 && !clockBeforeStatusMenu) {
@@ -43,7 +43,6 @@ export default class MoveClockAndStatusMenu extends Extension {
     }
 
     disable() {
-        this._settings = null;
         let centerBox = Main.panel._centerBox;
         let rightBox = Main.panel._rightBox;
 
@@ -58,6 +57,9 @@ export default class MoveClockAndStatusMenu extends Extension {
             rightBox.remove_child(this._statusMenu.container);
             rightBox.add_child(this._statusMenu.container);
         }
+
+        //cleanup
+        this._settings = null;
     }
 }
 
