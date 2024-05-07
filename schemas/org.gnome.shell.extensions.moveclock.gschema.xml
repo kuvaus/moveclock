@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="org.gnome.shell.extensions.moveclock" path="/org/gnome/shell/extensions/moveclock/">
+    <key name="clock-before-statusmenu" type="b">
+     <default>false</default>
+     <summary>Move the clock before the status menu</summary>
+     <description>
+        Toggle whether to move the clock before or after the status menu.
+     </description>
+    </key>
   </schema>
 </schemalist>
 
