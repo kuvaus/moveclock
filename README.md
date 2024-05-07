@@ -7,7 +7,7 @@ GNOME extension designed to reposition the clock on the right side of the panel
 ![Screenshot](./resources/screenshot.png)
 ## Overview
 
-**Moveclock** is a GNOME extension designed to reposition the clock on the right side of the panel, inspired by the **Frippery Move Clock**. This extension moves the status panel to the left of the clock, creating a look similar to macOS. Disabling the extension reverts the clock and status panel to their default positions. It is currently compatible with **GNOME 46** and has been tested on **Ubuntu 24.04 LTS**.
+**Moveclock** is a GNOME extension designed to reposition the clock on the right side of the panel. It was inspired by the **Frippery Move Clock** but has the ability to move the clock on either the left side of the System Menu or to the right corner which creates a look similar to macOS. Disabling the extension reverts the clock and status panel to their default positions. It is currently compatible with **GNOME 46** and has been tested on **Ubuntu 24.04 LTS**.
 
 
 ## Installation
@@ -79,7 +79,7 @@ gnome-extensions enable <extension name>
 gnome-extensions disable <extension name>
 ```
 
-- **Prefs**: Opens the preferences page, which includes a link to this Github page for downloading newer versions.
+- **Prefs**: Opens the preferences page. In preferences, there is a Toggle to move the clock before before (ON) or after (OFF) System Menu. By default the toggle is OFF meaning the clock will be on the right corner and System Menu on its left. After using the toggle, be sure to disable/re-enable the extension for changes to take effect. The preferences page also includes a link to this Github page for downloading newer versions.
 
 ```bash
 gnome-extensions prefs <extension name>
