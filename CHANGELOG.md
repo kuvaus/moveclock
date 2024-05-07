@@ -1,7 +1,13 @@
 
 ## Changelog
 
-#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v3...HEAD)
+#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v4...HEAD)
+
+#### [v4](https://github.com/kuvaus/moveclock/releases/tag/v4)
+
+> 7 May 2024
+
+- Fixed a bug where disable did not destroy all objects
 
 #### [v3](https://github.com/kuvaus/moveclock/releases/tag/v3)
 

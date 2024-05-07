@@ -43,6 +43,7 @@ export default class MoveClockAndStatusMenu extends Extension {
     }
 
     disable() {
+        this._settings = null;
         let centerBox = Main.panel._centerBox;
         let rightBox = Main.panel._rightBox;
 
