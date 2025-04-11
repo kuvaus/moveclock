@@ -5,9 +5,10 @@
   "gettext-domain": "moveclock",
   "settings-schema": "org.gnome.shell.extensions.moveclock",
   "shell-version": [
-    "46"
+    "46",
+    "47"
   ],
   "url": "https://github.com/kuvaus/moveclock",
   "uuid": "moveclock@kuvaus.org",
-  "version": 5
+  "version": 6
 }
