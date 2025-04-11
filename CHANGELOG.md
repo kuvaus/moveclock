@@ -1,7 +1,13 @@
 
 ## Changelog
 
-#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v6...HEAD)
+#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v7...HEAD)
+
+#### [v7](https://github.com/kuvaus/moveclock/releases/tag/v7)
+
+> 11 Apr 2025
+
+- GNOME 48 compatibility
 
 #### [v6](https://github.com/kuvaus/moveclock/releases/tag/v6)
 
