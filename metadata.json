@@ -6,9 +6,10 @@
   "settings-schema": "org.gnome.shell.extensions.moveclock",
   "shell-version": [
     "46",
-    "47"
+    "47",
+    "48"
   ],
   "url": "https://github.com/kuvaus/moveclock",
   "uuid": "moveclock@kuvaus.org",
-  "version": 6
+  "version": 7
 }
