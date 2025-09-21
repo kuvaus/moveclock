@@ -5,7 +5,7 @@
 
 #### [v8](https://github.com/kuvaus/moveclock/releases/tag/v8)
 
-> XX Apr 2025
+> 21 Sep 2025
 
 - GNOME 49 compatibility
 
