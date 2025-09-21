@@ -1,7 +1,13 @@
 
 ## Changelog
 
-#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v7...HEAD)
+#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v8...HEAD)
+
+#### [v8](https://github.com/kuvaus/moveclock/releases/tag/v8)
+
+> 21 Sep 2025
+
+- GNOME 49 compatibility
 
 #### [v7](https://github.com/kuvaus/moveclock/releases/tag/v7)
 
