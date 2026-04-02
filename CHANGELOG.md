@@ -1,7 +1,13 @@
 
 ## Changelog
 
-#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v8...HEAD)
+#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v9...HEAD)
+
+#### [v9](https://github.com/kuvaus/moveclock/releases/tag/v9)
+
+> XX Apr 2026
+
+- GNOME 50 compatibility
 
 #### [v8](https://github.com/kuvaus/moveclock/releases/tag/v8)
 
