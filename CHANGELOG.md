@@ -1,11 +1,17 @@
 
 ## Changelog
 
-#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v9...HEAD)
+#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v10...HEAD)
+
+#### [v10](https://github.com/kuvaus/moveclock/releases/tag/v10)
+
+> 10 Apr 2026
+
+- GNOME 50, initialization fix
 
 #### [v9](https://github.com/kuvaus/moveclock/releases/tag/v9)
 
-> XX Apr 2026
+> 02 Apr 2026
 
 - GNOME 50 compatibility
 

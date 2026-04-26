@@ -9,11 +9,11 @@ export default class MoveClockAndStatusMenu extends Extension {
     _init() {
         this._dateMenu = null;
         this._statusMenu = null;
-        this._settings = this.getSettings();
+        this._settings = null;
     }
 
     enable() {
-        this._init();
+        this._settings = this.getSettings();
         let centerBox = Main.panel._centerBox;
         let rightBox = Main.panel._rightBox;
         let dateMenu = Main.panel.statusArea['dateMenu'];
@@ -60,6 +60,8 @@ export default class MoveClockAndStatusMenu extends Extension {
 
         //cleanup
         this._settings = null;
+        this._dateMenu = null;
+        this._statusMenu = null;
     }
 }
 
