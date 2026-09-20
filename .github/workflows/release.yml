@@ -7,7 +7,7 @@ on:
       - 'v*'
 
 permissions:
-  contents: read
+  contents: write
   actions: write
 
 jobs:
@@ -44,25 +44,15 @@ jobs:
     
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v1
+      uses: softprops/action-gh-release@v2
       env:
-        GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        files: ./moveclock@kuvaus.org.shell-extension.zip
+        tag_name: ${{ github.ref_name }}
+        release_name: Release ${{ github.ref_name }}
         draft: false
         prerelease: false
-
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./moveclock@kuvaus.org.shell-extension.zip
-        asset_name: moveclock@kuvaus.org.shell-extension.zip
-        asset_content_type: application/zip
-
 
   releasenotes:
     needs: release
@@ -76,6 +66,6 @@ jobs:
         with:
           changelog_format: 'auto-changelog'
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
