@@ -1,7 +1,13 @@
 
 ## Changelog
 
-#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v10...HEAD)
+#### [Upcoming](https///github.com/kuvaus/moveclock/compare/v11...HEAD)
+
+#### [v11](https://github.com/kuvaus/moveclock/releases/tag/v11)
+
+> 20 Sep 2026
+
+- GNOME 51 compatibility
 
 #### [v10](https://github.com/kuvaus/moveclock/releases/tag/v10)
 
